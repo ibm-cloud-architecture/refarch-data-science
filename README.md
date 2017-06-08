@@ -1,17 +1,22 @@
-# refarch-data-science
-
-# Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (DSX) 
+# Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (WML) 
 
 ## Table of Contents
+### Introduction
+### Services used in reference architecture
+### Project files
+### Run the reference architecture in IBM Cloud
+#### Step 1: Environment Setup
+#### Step 2: Review the notebook, deploy and test model in WML
+#### Step 3: Test deployed service with a Python Flask application
+#### Step 4: Connect project to a new Bluemix Spark Service
+#### Step 5: Access data in dashDB Bluemix service
 
 ## Introduction
 This project provides a reference implementation for creating analytics deployment architecture with Data Science Expeience (DSX) and Watson Machine Learning (WML). Optional components of the architecture are Bluemix dashDB service (data source), Bluemix Apache Spark service (additional runtime environment), and Python Flask (front end) services. dashDB service is optional because other data sources can be used. Additional Spark Service is optional because DSX already includes Spark. Flask is optional because other types of front end applicaitons can integrate with analytics.
  
 The logical architecture for this reference implementation is shown in the picture below.
 
-**EL TODO**
-
-![Application Architecture](static/imgs/app_architecture.png?raw=true)
+![Application Architecture](static/imgs/architecture.png?raw=true)
 
 In this tutorial you will complete the following steps
 1. Review predictive model implementation (Python Notebook) in Data Science Experience. 
@@ -64,15 +69,15 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 #### Prerequisites
 
 1. Download this repository to your laptop and unzip it.
-2. Sign up for DSX (https://datascience.ibm.com/) and Bluemix. Make sure to use the same userid (otherwise Bluemix services will not be available in DSX)
+2. Sign up for [DSX](https://datascience.ibm.com/) and [Bluemix](https://bluemix.net). Make sure to use the same userid (otherwise Bluemix services will not be available in DSX)
 3. In Bluemix, provision the following services
-- Watson Machine Learning: https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south
-- dashDB for Analytics: https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics?env_id=ibm:yp:us-south&taxonomyNavigation=apps
-- Spark: https://console.ng.bluemix.net/catalog/services/apache-spark?env_id=ibm:yp:us-south&taxonomyNavigation=apps
-- Python Flask (use TelcoChurnDemo for the name): https://console.ng.bluemix.net/catalog/starters/python-flask?env_id=ibm:yp:us-south&taxonomyNavigation=apps
+- [Watson Machine Learning](https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south)
+- [dashDB for Analytics](https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
+- [Spark](https://console.ng.bluemix.net/catalog/services/apache-spark?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
+- [Python Flask](https://console.ng.bluemix.net/catalog/starters/python-flask?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
 
 ### Step 2: Review the notebook, deploy and test model in WML
-1. Log in to DSX: https://datascience.ibm.com/
+1. Log in to [DSX](https://datascience.ibm.com/)
 2. Click on the "+" icon to create a new project with a name * *Data Science Use Case* * **Note: it's important to use this name because the sample Notebook references it)**
 ![New Project](static/imgs/NewProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select * *Existing Services* * (because they were created during the prerequsite step in Bluemix)
