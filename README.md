@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (WML)](#)
-	- [Introduction](#)
-	- [Services used in the reference architecture](#)
+	- [Introduction](#introduction)
+	- [Services used in the reference architecture](#services-used-in-the-reference-architecture)
 	- [Application and Use Case Overview](#)
 	- [Project files](#)
 	- [Run the reference application in IBM Cloud](#)
