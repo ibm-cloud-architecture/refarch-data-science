@@ -79,13 +79,13 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 
 ### Step 2: Review the notebook, deploy and test model in WML
 1. Log in to [DSX](https://datascience.ibm.com/)
-2. Click on the "+" icon to create a new project with a name * *Data Science Use Case* * **Note: it's important to use this name because the sample Notebook references it)**
+2. Click on the "+" icon to create a new project with a name *Data Science Use Case* **Note: it's important to use this name because the sample Notebook references it)**
 ![New Project](static/imgs/NewProject.PNG?raw=true)
-3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select * *Existing Services* * (because they were created during the prerequisite step in Bluemix)
+3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select *Existing Services* (because they were created during the prerequisite step in Bluemix)
 ![Associated Services](static/imgs/AddServices.PNG?raw=true)
-3. Switch to the **Data Assets** tab and load the data files - * *churn.csv* * and * *customer.csv* * (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
+3. Switch to the **Data Assets** tab and load the data files - *churn.csv* and *customer.csv* (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
 ![Loaded Files](static/imgs/LoadedFiles.PNG?raw=true)
-4. Use the "+" icon to create the Notebook from file. Browse to * *TecloChurn.ipynb* * file included with this project. 
+4. Use the "+" icon to create the Notebook from file. Browse to *TecloChurn.ipynb* file included with this project. 
 5. Click on the Edit (pencil) icon to enter the edit mode. The notebook is in the edit mode when you see the menu. Follow instructions in the notebook.
 ![Notebook in the edit mode](static/imgs/NotebookEditMode.PNG?raw=true)
 
@@ -101,8 +101,11 @@ Now when you create a new notebook, you can select which Spark Service you would
 ![Select Spark Service](static/imgs/SelectSparkService.PNG?raw=true)
 
 ### Step 5 (optional): Access data in dashDB Bluemix service
-1. Log in to Bluemix and open the dashboard of your dashDB service.
-2. Load * *churn.csv* * and * *customer.csv* * files. Select "Load into new table" and accept all defaults.
-3. In DSX, create a new notebook from file * *TelcoChurn_dashDB* * (located in the * *notebooks* * folder) and follow instructions in the notebook. 
+1. Log in to Bluemix and open the dashboard of your dashDB service. Note *Service credentials* information (paste into Notepad). 
+2. Load *churn.csv* and *customer.csv* files. Select *Load into new table* and accept all defaults.
+3. Log in to DSX and open *Data Science Experience* project.
+4. Click on the **Data Assets** tabs and **Connections** in the right panel (if Connections is not visible, click on 0 and 1 icon above).
+5. Create a new connection. Make sure to select *External* and provide all the required connection information (avaible in Service credentials that you looked up in step 1).
+6. In DSX, create a new notebook from file *TelcoChurn_dashDB* (located in the *notebooks* folder) and follow instructions in the notebook. 
 
 You have finished implementing the Data Science Use Case reference architecture in IBM Cloud. 
