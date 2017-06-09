@@ -1,5 +1,20 @@
 # Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (WML) 
 
+## Table of Contents
+
+- [Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (WML)](#)
+	- [Introduction](#)
+	- [Services used in the reference architecture](#)
+	- [Application and Use Case Overview](#)
+	- [Project files](#)
+	- [Run the reference application in IBM Cloud](#)
+		- [Step 1: Environment Setup](#)
+			- [Prerequisites](#)
+		- [Step 2: Review the notebook, deploy and test model in WML](#)
+		- [Step 3 (optional): Test deployed service with a Python Flask application](#)
+		- [Step 4 (optional): Connect project to a new Bluemix Spark Service](#)
+		- [Step 5 (optional): Access data in dashDB Bluemix service](#)
+
 ## Introduction
 This project provides a reference implementation for creating analytics deployment architecture with Data Science Expeience (DSX) and Watson Machine Learning (WML). Optional components of the architecture are Bluemix dashDB (data source), Bluemix Apache Spark (additional runtime environment), and Python Flask (front end) services. dashDB service is optional because other data sources can be used. Additional Spark service is optional because DSX already includes Spark. Python Flask is optional because other types of front end applications can integrate with analytics.
  
