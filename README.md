@@ -1,16 +1,5 @@
 # Create an analytics application in IBM Data Science Experience (DSX) and Deploy it in Watson Machine Learning (WML) 
 
-## Table of Contents
-### Introduction
-### Services used in reference architecture
-### Project files
-### Run the reference architecture in IBM Cloud
-#### Step 1: Environment Setup
-#### Step 2: Review the notebook, deploy and test model in WML
-#### Step 3: Test deployed service with a Python Flask application
-#### Step 4: Connect project to a new Bluemix Spark Service
-#### Step 5: Access data in dashDB Bluemix service
-
 ## Introduction
 This project provides a reference implementation for creating analytics deployment architecture with Data Science Expeience (DSX) and Watson Machine Learning (WML). Optional components of the architecture are Bluemix dashDB service (data source), Bluemix Apache Spark service (additional runtime environment), and Python Flask (front end) services. dashDB service is optional because other data sources can be used. Additional Spark Service is optional because DSX already includes Spark. Flask is optional because other types of front end applicaitons can integrate with analytics.
  
@@ -24,15 +13,14 @@ In this tutorial you will complete the following steps
 3. Test the model with a Python Flask application
 
 Optional steps are:
-4. Create a Spark service in Bluemix and connect it to the DSX project
-5. Modify the Notebook to connect to a dahsDB data source
-6. Create a model with the Watson Machine Learning wizard
+1. Create a Spark service in Bluemix and connect it to the DSX project
+2. Modify the Notebook to connect to a dahsDB data source
 
 ## Services used in the reference architecture
 The reference architecture uses the following IBM services and offerings.
 
 **Data Science Experience**
-Data Science Experience (DSX) is a comprehensive platform for developing analytics applications. The main development environments are Notebooks, which support development in Python, R, and Scala. DSX also includes R Studio - software by an IBM business partner which has been integrated in DSX. DSX environment connects to a Spark service, which provides highly scalable environment for running analytics. 
+Data Science Experience (DSX) is a comprehensive platform for developing analytics applications. The main development environment is Notebooks, which supports development in Python, R, and Scala. DSX also includes R Studio - software by an IBM business partner which has been integrated in DSX, and APIs for developing **Decision Optimization** applications. DSX environment connects to a Spark service, which provides highly scalable environment for running analytics. 
 
 **Watson Machine Learning**
 Watson Machine Learning (WML) service contains three types of capabilities: 
@@ -82,7 +70,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 ![New Project](static/imgs/NewProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select * *Existing Services* * (because they were created during the prerequsite step in Bluemix)
 ![Associated Services](static/imgs/AddServices.PNG?raw=true)
-3. Swtich to the **Data Assets** tab and load the data files - churn.csv and customer.csv (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
+3. Swtich to the **Data Assets** tab and load the data files - * *churn.csv* * and * *customer.csv* * (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
 ![Loaded Files](static/imgs/LoadedFiles.PNG?raw=true)
 4. Use the "+" icon to create the Notebook from file. Browse to * *TecloChurn.ipynb* * file included with this project. 
 5. Click on the Edit (pencil) icon to enter the edit mode. The notebook is in the edit mode when you see the menu. Follow instructions in the notebook.
@@ -100,3 +88,6 @@ Now when you create a new notebook, you can select which Spark Service you would
 ![Select Spark Service](static/imgs/SelectSparkService.PNG?raw=true)
 
 ### Step 5 (optional): Access data in dashDB Bluemix service
+1. Log in to Bluemix and open the dashboard of your dashDB service.
+2. Load * *churn.csv* * and * *customer.csv* * files. Select "Load into new table" and accept all defaults.
+3. In DSX, create a new notebook from file * *TelcoChurn_dashDB* * (located in the * *notebooks* * folder) and follow instructions in the notebook. 
