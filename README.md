@@ -105,7 +105,8 @@ Now when you create a new notebook, you can select which Spark Service you would
 2. Load *churn.csv* and *customer.csv* files. Select *Load into new table* and accept all defaults.
 3. Log in to DSX and open *Data Science Experience* project.
 4. Click on the **Data Assets** tabs and **Connections** in the right panel (if Connections is not visible, click on 0 and 1 icon above).
-5. Create a new connection. Make sure to select *External* and provide all the required connection information (avaible in Service credentials that you looked up in step 1).
+5. Create a new connection. Make sure to select *External* and provide all the required connection information (available in Service credentials that you looked up in step 1).
+![dashDB](static/imgs/dashDB.PNG?raw=true)
 6. In DSX, create a new notebook from file *TelcoChurn_dashDB* (located in the *notebooks* folder) and follow instructions in the notebook. 
 
 You have finished implementing the Data Science Use Case reference architecture in IBM Cloud. 
