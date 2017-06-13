@@ -89,7 +89,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 5. Click on the Edit (pencil) icon to enter the edit mode. The notebook is in the edit mode when you see the menu. Follow instructions in the notebook.
 ![Notebook in the edit mode](static/imgs/NotebookEditMode.PNG?raw=true)
 
-### Step 3 (optional): Test deployed service with a Python Flask application
+### Step 3: Test deployed service with a Python Flask application
 The notebook provided instructions for testing the model with a REST client. We also developed a sample Python Flask application which can be used for testing: https://churndemo.mybluemix.net/. This application implements the REST client call to the model. 
 
 ### Step 4 (optional): Connect project to a new Bluemix Spark Service
