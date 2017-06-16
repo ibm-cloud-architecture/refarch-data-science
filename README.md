@@ -69,7 +69,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 
 #### Prerequisites
 
-1. Download this repository to your laptop and unzip it.
+1. Download [this repository](https://github.com/ibm-cloud-architecture/refarch-data-science/archive/master.zip) to your laptop and unzip it.
 2. Sign up for [DSX](https://datascience.ibm.com/) and [Bluemix](https://bluemix.net). Make sure to use the same userid (otherwise Bluemix services will not be available in DSX)
 3. In Bluemix, provision the following services
 - [Watson Machine Learning](https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south)
@@ -80,14 +80,18 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 ### Step 2: Review the notebook, deploy and test model in WML
 1. Log in to [DSX](https://datascience.ibm.com/)
 2. Click on the "+" icon to create a new project with a name *Data Science Use Case* **Note: it's important to use this name because the sample Notebook references it)**
+![Project Icon](static/imgs/ProjectIcon.PNG?raw=true)
 ![New Project](static/imgs/NewProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select *Existing Services* (because they were created during the prerequisite step in Bluemix)
 ![Associated Services](static/imgs/AddServices.PNG?raw=true)
 3. Switch to the **Data Assets** tab and load the data files - *churn.csv* and *customer.csv* (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
 ![Loaded Files](static/imgs/LoadedFiles.PNG?raw=true)
-4. Use the "+" icon to create the Notebook from file. Browse to *TecloChurn.ipynb* file included with this project. 
-5. Click on the Edit (pencil) icon to enter the edit mode. The notebook is in the edit mode when you see the menu. Follow instructions in the notebook.
+4. Switch to the Analytics Assets tab and click *add notebooks*
+5. Select *From File* option. Browse to *TecloChurn.ipynb* file located in the *Notebooks* folder of the unzipped repository.
+![Add notebook](static/imgs/AddNotebook.PNG?raw=true)
+6. The notebook is in the edit mode when you see the menu. If you don't see the menu, click on the Edit (pencil) icon to enter the edit mode.  
 ![Notebook in the edit mode](static/imgs/NotebookEditMode.PNG?raw=true)
+7. Follow instructions in the notebook.
 
 ### Step 3: Test deployed service with a Python Flask application
 The notebook provided instructions for testing the model with a REST client. We also developed a sample Python Flask application which can be used for testing: https://churndemo.mybluemix.net/. This application implements the REST client call to the model. 
