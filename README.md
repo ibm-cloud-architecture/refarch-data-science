@@ -80,8 +80,9 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 ### Step 2: Review the notebook, deploy and test model in WML
 1. Log in to [DSX](https://datascience.ibm.com/)
 2. Click on the "+" icon to create a new project with a name *Data Science Use Case* **Note: it's important to use this name because the sample Notebook references it)**
+<br>
 ![Project Icon](static/imgs/ProjectIcon.PNG?raw=true)
-![New Project](static/imgs/NewProject.PNG?raw=true)
+![Create Project](static/imgs/CreateProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select *Existing Services* (because they were created during the prerequisite step in Bluemix)
 ![Associated Services](static/imgs/AddServices.PNG?raw=true)
 3. Switch to the **Data Assets** tab and load the data files - *churn.csv* and *customer.csv* (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
