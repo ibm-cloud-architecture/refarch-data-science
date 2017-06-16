@@ -84,7 +84,8 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 ![Create Project](static/imgs/CreateProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select *Existing Services* (because they were created during the prerequisite step in Bluemix)
 ![Associated Services](static/imgs/AddServices.PNG?raw=true)
-3. Switch to the **Data Assets** tab and load the data files - *churn.csv* and *customer.csv* (located in the /data folder). If the Files menu is not displayed, click on the Data icon ![Data icon](static/imgs/DataIcon.PNG?raw=true)
+3. Switch to the **Data Assets** tab and load the data files - *churn.csv* and *customer.csv* (located in the /data folder). If the Files menu is not displayed, click on the Data icon <br />
+![Data icon](static/imgs/DataIcon.PNG?raw=true)
 ![Loaded Files](static/imgs/LoadedFiles.PNG?raw=true)
 4. Switch to the Analytics Assets tab and click *add notebooks*
 5. Select *From File* option. Browse to *TecloChurn.ipynb* file located in the *Notebooks* folder of the unzipped repository.
