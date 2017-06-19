@@ -75,7 +75,6 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 - [Watson Machine Learning](https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south)
 - [dashDB for Analytics](https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
 - [Spark](https://console.ng.bluemix.net/catalog/services/apache-spark?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
-- [Python Flask](https://console.ng.bluemix.net/catalog/starters/python-flask?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
 
 ### Step 2: Review the notebook, deploy and test model in WML
 1. Log in to [DSX](https://datascience.ibm.com/)
@@ -95,7 +94,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 7. Follow instructions in the notebook.
 
 ### Step 3: Test deployed service with a Python Flask application
-The notebook provided instructions for testing the model with a REST client. We also developed a sample Python Flask application which can be used for testing: https://churndemo.mybluemix.net/. This application implements the REST client call to the model. 
+The notebook provided instructions for testing the model with a REST client. We also developed a sample Python Flask application which can be used for testing: http://predictcustomerchurn.mybluemix.net/. This application implements the REST client call to the model. 
 
 ### Step 4 (optional): Connect project to a new Bluemix Spark Service
 As mentioned earlier, a DSX account (enterprise and free) by default includes a Spark Service. If you would like to add additional processing capacity, you can create a Spark Service in Bluemix and use it in your DSX projects. 
