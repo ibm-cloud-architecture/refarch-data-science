@@ -16,7 +16,7 @@
 		- [Step 5 (optional): Access data in dashDB Bluemix service](#)
 
 ## Introduction
-This project provides a reference implementation for creating analytics deployment architecture with Data Science Expeience (DSX) and Watson Machine Learning (WML). Optional components of the architecture are Bluemix dashDB (data source), Bluemix Apache Spark (additional runtime environment), and Python Flask (front end) services. dashDB service is optional because other data sources can be used. Additional Spark service is optional because DSX already includes Spark. Python Flask is optional because other types of front end applications can integrate with analytics.
+This project provides a reference implementation for creating analytics deployment architecture with Data Science Experience (DSX) and Watson Machine Learning (WML). Optional components of the architecture are Bluemix dashDB (data source), Bluemix Apache Spark (additional runtime environment), and Python Flask (front end) services. dashDB service is optional because other data sources can be used. Additional Spark service is optional because DSX already includes Spark. Python Flask is optional because other types of front end applications can integrate with analytics.
  
 The logical architecture for this reference implementation is shown in the picture below.
 
@@ -29,7 +29,7 @@ In this tutorial you will complete the following steps
 
 Optional steps are:
 1. Create a Spark service in Bluemix and connect it to the DSX project. 
-2. Modify the notebook to connect to a dahsDB data source. 
+2. Modify the notebook to connect to a dashDB data source. 
 
 ## Services used in the reference architecture
 The reference architecture uses the following IBM services and offerings.
@@ -73,7 +73,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 2. Sign up for [DSX](https://datascience.ibm.com/) and [Bluemix](https://bluemix.net). Make sure to use the same userid (otherwise Bluemix services will not be available in DSX)
 3. In Bluemix, provision the following services
 - [Watson Machine Learning](https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south)
-- [dashDB for Analytics](https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
+- [dashDB for Analytics](https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics?env_id=ibm:yp:us-south&taxonomyNavigation=apps). *You can use the existing dashDB service if you already have one.*
 - [Spark](https://console.ng.bluemix.net/catalog/services/apache-spark?env_id=ibm:yp:us-south&taxonomyNavigation=apps)
 
 ### Step 2: Review the notebook, deploy and test model in WML
@@ -87,7 +87,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 ![Data icon](static/imgs/DataIcon.PNG?raw=true)
 ![Loaded Files](static/imgs/LoadedFiles.PNG?raw=true)
 4. Switch to the Analytics Assets tab and click *add notebooks*
-5. Select *From File* option. Browse to *TecloChurn.ipynb* file located in the *Notebooks* folder of the unzipped repository.
+5. Select *From URL* option and enter the following URL: https://github.com/ibm-cloud-architecture/refarch-data-science/blob/master/notebooks/TelcoChurn.ipynb
 ![Add notebook](static/imgs/AddNotebook.PNG?raw=true)
 6. The notebook is in the edit mode when you see the menu. If you don't see the menu, click on the Edit (pencil) icon to enter the edit mode.  
 ![Notebook in the edit mode](static/imgs/NotebookEditMode.PNG?raw=true)
@@ -108,6 +108,6 @@ Now when you create a new notebook, you can select which Spark Service you would
 1. Log in to Bluemix and open the dashboard of your dashDB service. Note *Service credentials* information (paste into Notepad). 
 2. Load *churn.csv* and *customer.csv* files. Select *Load into new table* and accept all defaults.
 3. Log in to DSX and open *Data Science Experience* project.
-4. In DSX, create a new notebook titled **TelcoChurn_dashDB** from file *TelcoChurn_dashDB.ipnb* (located in the *notebooks* folder) and follow instructions in the notebook. 
+4. In DSX, create a new notebook titled **TelcoChurn_dashDB** from URL: https://github.com/ibm-cloud-architecture/refarch-data-science/blob/master/notebooks/TelcoChurn_dashDB.ipynb 
 
 You have finished implementing the Data Science Use Case reference architecture in IBM Cloud. 
