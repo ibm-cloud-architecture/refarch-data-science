@@ -78,7 +78,7 @@ To run the sample applications you will to complete several steps in DSX, WML, a
 
 ### Step 2: Review the notebook, deploy and test model in WML
 1. Log in to [DSX](https://datascience.ibm.com/)
-2. Click on the "+" icon to create a new project with a name *Data Science Use Case* **Note: it's important to use this name because the sample Notebook references it)**<br />
+2. Click on the "+" icon to create a new project with a name *Data Science Use Case* **Note: it's important to use this name because the sample Notebook references it)**<br /> [Helper video](/videos/CreateProject.mp4)
 ![Project Icon](static/imgs/ProjectIcon.PNG?raw=true)
 ![Create Project](static/imgs/CreateProject.PNG?raw=true)
 3. Switch to the **Settings** tab and add two services - Watson Machine Learning and Spark. Select *Existing Services* (because they were created during the prerequisite step in Bluemix)
