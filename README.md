@@ -65,6 +65,8 @@ This project contains all the required files for building out the architecture a
 ## Run the reference application in IBM Cloud
 To run the sample applications you will to complete several steps in DSX, WML, and optionally, in dashDB, Spark, and Python Flask services.  
 
+If you wish, you can watch the [video](https://ibm.box.com/s/lp86j3od1pdprxbn3fomo1ox3fbs5gko) of steps you'll complete in this lab (12 minutes). 
+
 ### Step 1: Environment Setup
 
 #### Prerequisites
