@@ -71,7 +71,7 @@ If you wish, you can watch the [video](https://ibm.box.com/s/lp86j3od1pdprxbn3fo
 
 #### Prerequisites
 
-1. Download [this repository](https://github.com/ibm-cloud-architecture/refarch-data-science/archive/master.zip) to your laptop and unzip it.
+1. Download files from the data folder of this repository. 
 2. Sign up for [DSX](https://datascience.ibm.com/) and [Bluemix](https://bluemix.net). Make sure to use the same userid (otherwise Bluemix services will not be available in DSX)
 3. In Bluemix, provision the following services
 - [Watson Machine Learning](https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/?env_id=ibm:yp:us-south)
